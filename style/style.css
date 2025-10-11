@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Wonderscript';
-    src: url("./fonts/Wonderscript.woff2") format('woff2'), 
-         url("./fonts/Wonderscript.woff") format('woff');
+    font-family: 'keterina';
+    src: url("./fonts/keterina.woff2") format('woff2'), 
+         url("./fonts/keterina.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +24,7 @@ body{
     margin: auto;
     max-width: 360px;
     min-width: 360px;
-    font-family:'Roboto-Regular', sans-serif;
+    font-family:'Roboto-Regular';
     /* background-color: #FFFFF0; */
     /* background-color: #fcf8f1 ; */
     /* background-color: #faf7f3  ; */
@@ -40,9 +40,9 @@ h4,p {
 
 h4 {
     /* color: #b65d5d; */
-    color: #590707;
+    color: #8B2A2A;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: Capitalize;
 }
 
 h1,h3 {
@@ -50,16 +50,17 @@ h1,h3 {
     margin: 0;
     text-align: center;
     /* color: #b65d5d; */
-    color: #590707;
-    font-size: 24px;
+    color: #8B2A2A;
+    font-size: 30px;
     line-height: 50px;
-    text-transform: uppercase;
+    text-transform: Capitalize;
+    margin-bottom: 10px;
 }
 
 h1 {
     margin-top: 30px;
     font-size: 40px;
-    text-transform: uppercase;
+    text-transform: Capitalize;
 }
 
 .title-wrapper {
@@ -67,6 +68,20 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+}
+
+.title-date {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.title-img  {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%)
 }
 
 .investigate-wrapper {
@@ -103,6 +118,10 @@ h1 {
     gap: 10px;
 }
 
+.second {
+    margin-top: 20px;
+}
+
 .btn-link{
     align-self: center;
 }
@@ -116,20 +135,20 @@ h1 {
     text-decoration: none;
     color: white;
     transition: background-color 0.5s ease;
-    background: #b65d5d;
+    background: #8B2A2A;
     cursor: pointer;
 }
 
 .btn-new:hover{
-    background-color: black;
+    background-color: #D19A9A;
 }
 
 .programm-wrapper {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .proggram-events-wrapper {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -157,7 +176,15 @@ h1 {
 }
 
 .event-text-title {
+    color: black;
+    text-align: left;
+    font-weight: 600;
+    text-transform: Capitalize;
     margin: 0;
+}
+
+.time {
+    color: #8B2A2A;
 }
 
 .event-wrapper {
@@ -183,7 +210,7 @@ h1 {
 }
 
 .colors-wrapper {
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
 
@@ -224,27 +251,28 @@ h1 {
 }
 
 .request-wrapper {
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .questions-wrapper {
-    margin: 80px 0 40px 0;
+    margin: 100px 0 40px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.request-item-line,.event-line-wrapper {
+/* .request-item-line,.event-line-wrapper {
     border-top: 1px solid red;
     width: 100%;
 
-}
+} */
 
 .proggram-event-center-wrapper{
     width: 0px;
-    border: 1px solid red;
+    border: 1px solid #8B2A2A;
 }
 
 
@@ -269,7 +297,7 @@ h1 {
 }
 
 .any-time-wrapper {
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .digits-time {
@@ -277,11 +305,21 @@ h1 {
     height: 40px;
     text-align: center;
     border-radius: 50px;
-    border: 1px solid #590707;;
+    border: 2px solid #8B2A2A;;
     margin: 0;
     line-height: 40px;
 }
 
 .time-counter-text {
-    text-transform: lowercase;
+    text-transform: Capitalize;
+}
+
+
+.request-image {
+    width: 70px;
+    height: 50px;
+}
+
+.colors-text {
+    margin-top: 20px;
 }
